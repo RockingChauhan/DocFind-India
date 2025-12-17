@@ -99,11 +99,11 @@ const DoctorCard = ({ doctor, viewMode = 'grid' }) => {
 
   return (
     <div className="card overflow-hidden">
-      <div className="relative">
+      <div className="relative flex items-center justify-center bg-gray-400 aspect-[4/3] overflow-hidden">
         <img
           src={profileImage}
           alt={name}
-          className="w-full h-48 object-cover"
+          className="w-[145px] h-[145px] object-cover object-center rounded-full border-4 border-white shadow-md"
         />
         <div className="absolute top-2 right-2">
           {getConsultationBadge()}
